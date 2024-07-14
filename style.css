@@ -1,0 +1,45 @@
+header{
+    box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.2);    
+    height: auto;
+    position: relative;
+    top: 50px;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 20px;
+    text-align: center;
+}
+.text1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 0px;
+}
+.text2{
+    padding: 0px 130px 10px 130px;
+    font-size: 20px;
+    transition: .5s;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+}
+i{
+    color: grey;
+    font-size: 22px;
+    transition: .5s;
+    font-weight: 700;
+}
+#checkbox{
+    display: none;
+}
+#checkbox:checked ~ .text2{
+    margin-top: -20px;
+    transition: .5s ;
+    display: inline-block;
+}
+#checkbox:checked ~ label i{
+    color: red;
+    transition: .5s;
+    rotate: 45deg;
+}
